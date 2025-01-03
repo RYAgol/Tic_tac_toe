@@ -1,9 +1,12 @@
 # Tic_tac_toe
 Here i am creating a tic tac toe game in python
+
 def sum(a, b, c ):
+   
     return a + b + c
 
 def printBoard(xState, zState):
+    
     zero = 'X' if xState[0] else ('O' if zState[0] else 0)
     one = 'X' if xState[1] else ('O' if zState[1] else 1)
     two = 'X' if xState[2] else ('O' if zState[2] else 2)
@@ -20,6 +23,7 @@ def printBoard(xState, zState):
     print(f"{six} | {seven} | {eight} ") 
 
 def checkWin(xState, zState):
+    
     wins = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
     for win in wins:
         if(sum(xState[win[0]], xState[win[1]], xState[win[2]]) == 3):
@@ -31,6 +35,7 @@ def checkWin(xState, zState):
     return -1
     
 if __name__ == "__main__":
+    
     xState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     zState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     turn = 1 # 1 for X and 0 for O
