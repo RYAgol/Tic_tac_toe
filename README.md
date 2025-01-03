@@ -1,7 +1,7 @@
 # Tic_tac_toe
 Here i am creating a tic tac toe game in python
 def sum(a, b, c ):
-    return a + b + c 
+    return a + b + c
 
 def printBoard(xState, zState):
     zero = 'X' if xState[0] else ('O' if zState[0] else 0)
